@@ -51,7 +51,6 @@ export function searchRecipe(arrayOfRecipes) {
         }
 
         const results = [];
-        // 🔁 Boucle principale (remplace filter)
         for (let i = 0; i < arrayOfRecipes.length; i++) {
             const recipe = arrayOfRecipes[i];
             const nameMatch = normalise(recipe.name).includes(target);
