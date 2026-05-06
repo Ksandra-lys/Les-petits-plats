@@ -14,9 +14,7 @@ export function searchRecipeFromTagInput(arrayOfRecipe) {
     const tagUst = [
         ...new Set(arrayOfRecipe.flatMap((recipe) => recipe.ustensils))
     ]
-    /*Promise.all([tagIng, tagAppl, tagUst]).then((tags) => {
-        console.log(tags)
-    })*/
+   
 
     const ingInput = document.querySelector(".dropdown_header_ingredients span");
     const applInput = document.querySelector(".dropdown_header_appliances span");

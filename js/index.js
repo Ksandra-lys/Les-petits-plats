@@ -6,14 +6,12 @@ import { displayDropdown } from "../widgets/displayDropdown.mjs";
 import { searchRecipeFromTagInput } from "../modules/searchRecipeFromTagInput.mjs";
 import { searchRecipeFromTagClic } from "../modules/searchRecipeFromTagClic.mjs";
 
-document.addEventListener("DOMContentLoaded", async () => {
-    displayRecipePage(recipes);
-    displayDropdown(recipes)
-    searchRecipe(recipes)
-    
-    launchDropdown()
-    searchRecipeFromTagInput(recipes)
-    searchRecipeFromTagClic(recipes)
-   
+document.addEventListener("DOMContentLoaded", () => {
+  launchDropdown()
+  displayRecipePage(recipes);
+  displayDropdown(recipes);
+  searchRecipeFromTagInput(recipes)
+  searchRecipeFromTagClic(recipes)
+  searchRecipe(recipes);
 })
 

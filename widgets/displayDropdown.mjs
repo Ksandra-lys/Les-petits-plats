@@ -45,4 +45,6 @@ export function displayDropdown(arrayOfRecipe){
         </ul> 
     </div>
     `    
+
+    
 }

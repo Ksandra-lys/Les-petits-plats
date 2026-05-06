@@ -33,4 +33,8 @@ export function displayRecipePage(arrayOfRecipe) {
     </div>
     `
     })
+
+    if(arrayOfRecipe.length === 0){
+        recipesContainer.innerHTML = `<p>Aucune recette ne correspond à votre critère</p>`;
+    }
 }
